@@ -9,6 +9,7 @@
     "start": "electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
+    "publish": "electron-forge publish",
     "lint": "eslint --ext .ts,.tsx .",
     "typecheck": "tsc --noEmit"
   },
@@ -30,6 +31,7 @@
     "@electron-forge/plugin-auto-unpack-natives": "^8.0.0-alpha.7",
     "@electron-forge/plugin-fuses": "^8.0.0-alpha.7",
     "@electron-forge/plugin-vite": "^8.0.0-alpha.7",
+    "@electron-forge/publisher-github": "^8.0.0-alpha.7",
     "@electron/fuses": "^2.0.0",
     "@types/electron-squirrel-startup": "^1.0.2",
     "@typescript-eslint/eslint-plugin": "^8.0.0",

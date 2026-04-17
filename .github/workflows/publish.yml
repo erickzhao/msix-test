@@ -12,6 +12,8 @@ jobs:
         include:
           - os: windows-latest
             make-targets: --targets @electron-forge/maker-msix
+          - os: macos-latest
+            make-targets: --targets @electron-forge/maker-zip
     runs-on: ${{ matrix.os }}
     permissions:
       contents: write

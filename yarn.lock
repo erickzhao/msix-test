@@ -11,7 +11,7 @@ __metadata:
   dependencies:
     "@electron-forge/cli": "npm:^8.0.0-alpha.7"
     "@electron-forge/maker-deb": "npm:^8.0.0-alpha.7"
-    "@electron-forge/maker-msix": "npm:^8.0.0-alpha.7"
+    "@electron-forge/maker-msix": "patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch"
     "@electron-forge/maker-rpm": "npm:^8.0.0-alpha.7"
     "@electron-forge/maker-squirrel": "npm:^8.0.0-alpha.7"
     "@electron-forge/maker-zip": "npm:^8.0.0-alpha.7"
@@ -124,7 +124,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@electron-forge/maker-msix@npm:^8.0.0-alpha.7":
+"@electron-forge/maker-msix@npm:8.0.0-alpha.7":
   version: 8.0.0-alpha.7
   resolution: "@electron-forge/maker-msix@npm:8.0.0-alpha.7"
   dependencies:
@@ -134,6 +134,19 @@ __metadata:
     electron-windows-msix: "npm:^2.0.4"
     fs-extra: "npm:^10.0.0"
   checksum: 10c0/3697ae53db49e751f6b46b765fcdc63db30114aa793ae7e55fe8d98ea1167928616cc1ddd7830d9de27779f19cc68e86ad43e34d1df0f3f69902e172e2da5441
+  languageName: node
+  linkType: hard
+
+"@electron-forge/maker-msix@patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch":
+  version: 8.0.0-alpha.7
+  resolution: "@electron-forge/maker-msix@patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch::version=8.0.0-alpha.7&hash=9f4b30"
+  dependencies:
+    "@electron-forge/core-utils": "npm:8.0.0-alpha.7"
+    "@electron-forge/maker-base": "npm:8.0.0-alpha.7"
+    "@electron-forge/shared-types": "npm:8.0.0-alpha.7"
+    electron-windows-msix: "npm:^2.0.4"
+    fs-extra: "npm:^10.0.0"
+  checksum: 10c0/81945e131ccb79c115930f000dde3da5a4a40b75a0ad64d39aafb087a614ef2ef318fbfa0e4d137c4a98b9122d41110b2bc7995a7541c2a9dc4ffe63967357a7
   languageName: node
   linkType: hard
 

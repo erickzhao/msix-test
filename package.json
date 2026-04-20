@@ -24,7 +24,7 @@
   "devDependencies": {
     "@electron-forge/cli": "^8.0.0-alpha.7",
     "@electron-forge/maker-deb": "^8.0.0-alpha.7",
-    "@electron-forge/maker-msix": "^8.0.0-alpha.7",
+    "@electron-forge/maker-msix": "patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch",
     "@electron-forge/maker-rpm": "^8.0.0-alpha.7",
     "@electron-forge/maker-squirrel": "^8.0.0-alpha.7",
     "@electron-forge/maker-zip": "^8.0.0-alpha.7",

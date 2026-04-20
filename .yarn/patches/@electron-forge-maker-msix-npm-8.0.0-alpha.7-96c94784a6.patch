@@ -1,0 +1,13 @@
+diff --git a/dist/MakerMSIX.js b/dist/MakerMSIX.js
+index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..9bf4c78e1c17bbf15d8986d40da18557ff12b4c2 100644
+--- a/dist/MakerMSIX.js
++++ b/dist/MakerMSIX.js
+@@ -34,7 +34,7 @@ export default class MakerMSIX extends MakerBase {
+                 appDir: dir,
+                 outputDir: tmpFolder,
+             });
+-            const outputPath = path.resolve(makeDir, 'msix', targetArch, `${appName}.msix`);
++            const outputPath = path.resolve(makeDir, 'msix', targetArch, `${appName}-${packageJSON.version}-${targetPlatform}-${targetArch}.msix`);
+             await fs.mkdirp(path.dirname(outputPath));
+             await fs.move(result.msixPackage, outputPath);
+             return [outputPath];

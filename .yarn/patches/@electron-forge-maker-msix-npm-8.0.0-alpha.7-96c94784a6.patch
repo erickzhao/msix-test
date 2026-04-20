@@ -1,5 +1,5 @@
 diff --git a/dist/MakerMSIX.js b/dist/MakerMSIX.js
-index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..53bb27d5763cca8521fcc8f1c59e68a427fed19b 100644
+index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..7a245ba326f87a6a5da11390b3204b21c7eb4e2a 100644
 --- a/dist/MakerMSIX.js
 +++ b/dist/MakerMSIX.js
 @@ -15,7 +15,7 @@ export default class MakerMSIX extends MakerBase {
@@ -7,7 +7,7 @@ index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..53bb27d5763cca8521fcc8f1c59e68a4
          return process.platform === 'win32';
      }
 -    async make({ dir, makeDir, targetArch, packageJSON, appName, }) {
-+    async make({ dir, makeDir, targetArch, targetPlatform, packageJSON, appName, }) {
++    async make({ dir, makeDir, targetPlatform, targetArch, packageJSON, appName, }) {
          const { manifestVariables, ...packageOptions } = this.config;
          // Do all the scratch work in a temporary folder
          const tmpFolder = await fs.mkdtemp(path.resolve(os.tmpdir(), 'msix-maker-'));
@@ -16,7 +16,7 @@ index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..53bb27d5763cca8521fcc8f1c59e68a4
                  outputDir: tmpFolder,
              });
 -            const outputPath = path.resolve(makeDir, 'msix', targetArch, `${appName}.msix`);
-+            const outputPath = path.resolve(makeDir, 'msix', targetArch, `${appName}-${packageJSON.version}-${targetPlatform}-${targetArch}.msix`);
++            const outputPath = path.resolve(makeDir, 'msix', targetArch, `${appName}-${targetPlatform}-${targetArch}-${packageJSON.version}.msix`);
              await fs.mkdirp(path.dirname(outputPath));
              await fs.move(result.msixPackage, outputPath);
              return [outputPath];

@@ -1,7 +1,16 @@
 diff --git a/dist/MakerMSIX.js b/dist/MakerMSIX.js
-index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..9bf4c78e1c17bbf15d8986d40da18557ff12b4c2 100644
+index 8d57f6244b2c11e7fdb352d18aba2109cc2a2f0b..53bb27d5763cca8521fcc8f1c59e68a427fed19b 100644
 --- a/dist/MakerMSIX.js
 +++ b/dist/MakerMSIX.js
+@@ -15,7 +15,7 @@ export default class MakerMSIX extends MakerBase {
+     isSupportedOnCurrentPlatform() {
+         return process.platform === 'win32';
+     }
+-    async make({ dir, makeDir, targetArch, packageJSON, appName, }) {
++    async make({ dir, makeDir, targetArch, targetPlatform, packageJSON, appName, }) {
+         const { manifestVariables, ...packageOptions } = this.config;
+         // Do all the scratch work in a temporary folder
+         const tmpFolder = await fs.mkdtemp(path.resolve(os.tmpdir(), 'msix-maker-'));
 @@ -34,7 +34,7 @@ export default class MakerMSIX extends MakerBase {
                  appDir: dir,
                  outputDir: tmpFolder,

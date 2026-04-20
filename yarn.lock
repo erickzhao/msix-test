@@ -139,14 +139,14 @@ __metadata:
 
 "@electron-forge/maker-msix@patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch":
   version: 8.0.0-alpha.7
-  resolution: "@electron-forge/maker-msix@patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch::version=8.0.0-alpha.7&hash=9f4b30"
+  resolution: "@electron-forge/maker-msix@patch:@electron-forge/maker-msix@npm%3A8.0.0-alpha.7#~/.yarn/patches/@electron-forge-maker-msix-npm-8.0.0-alpha.7-96c94784a6.patch::version=8.0.0-alpha.7&hash=a2280c"
   dependencies:
     "@electron-forge/core-utils": "npm:8.0.0-alpha.7"
     "@electron-forge/maker-base": "npm:8.0.0-alpha.7"
     "@electron-forge/shared-types": "npm:8.0.0-alpha.7"
     electron-windows-msix: "npm:^2.0.4"
     fs-extra: "npm:^10.0.0"
-  checksum: 10c0/81945e131ccb79c115930f000dde3da5a4a40b75a0ad64d39aafb087a614ef2ef318fbfa0e4d137c4a98b9122d41110b2bc7995a7541c2a9dc4ffe63967357a7
+  checksum: 10c0/043722b7244c199186a044d70230bf19392b041b1684f0be83c3f6504131dd8a4ffe532ead7927e999616efc6cfe20191a62bee9f5cc6a7a1c8fa90f3f2a8bce
   languageName: node
   linkType: hard
 
